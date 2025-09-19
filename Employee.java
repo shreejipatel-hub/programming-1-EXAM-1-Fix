@@ -29,6 +29,9 @@ public class Employee{
     /**
      * Returns true is an employee is above 16 years old
      */
+    /*
+     * question12
+     */
     public boolean canDrive(){
         int age = calculateAge(2025);
         if(age>=16)
@@ -37,12 +40,15 @@ public class Employee{
         }
         else
         {
-            print ("you have to wait "+(16-age)+" year.";
+            print("you have to wait "+(16-age)+" year.";
         }
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
+     */
+    /*
+     * question13
      */
     private double calculatePay(){
         // to be completed
@@ -51,23 +57,33 @@ public class Employee{
         print total;
     }
     
+    /*
+     * question11
+     */
     private int setValue()
     {
         Birthyear=yearOfBirth;
         Birthyear.setValue;
     }
     
+        /*
+     * question11
+     */
     private int getValue()
     {
         Birthyear.getValue();
     }
     
     /*
-     * Output the payment record and resets unpaid hours
+     * Output the payment record and resets unpaid hours 
+     */
+    /*
+     * question14
      */
     public void paySalary(){
         // to be completed
-        print (fullname+" had received a wire transfer of "+total+" CAD.")
+        System.out.println
+            (fullname+" had received a wire transfer of "+total+" CAD.");
         unpaidHours=0;
     }
 }
