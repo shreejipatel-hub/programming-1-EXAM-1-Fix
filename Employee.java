@@ -54,7 +54,7 @@ public class Employee{
         // to be completed
         double subtotal=(hourlyWage*unpaidHours);
         double total=(subtotal-(0.30*subtotal));
-        print total;
+         System.out.println(total);
     }
     
     /*
@@ -62,7 +62,7 @@ public class Employee{
      */
     private int setValue(int yearOfBirth)
     {
-        yearOfBirth = yearOfBirth;
+        this.yearOfBirth = yearOfBirth;
     }
     
         /*
@@ -70,7 +70,7 @@ public class Employee{
      */
     private int getValue()
     {
-        return yearOfBirth;
+        return this.yearOfBirth;
     }
     
     /*
@@ -82,7 +82,7 @@ public class Employee{
     public void paySalary(){
         // to be completed
         System.out.println
-            (fullname+" had received a wire transfer of "+total+" CAD.");
+            (fullname+" had received a wire transfer of "+ total +" CAD.");
         unpaidHours=0;
     }
 }
