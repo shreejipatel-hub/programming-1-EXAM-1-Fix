@@ -31,7 +31,14 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        // to be completed
+        if(age>=16)
+        {
+            print="You can drive.";
+        }
+        else
+        {
+            print ("you have to wait "+(16-age)+" year.";
+        }
     }
 
     /*
@@ -39,12 +46,28 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
+        double subtotal=(hourlyWage*unpaidHours);
+        double total=(subtotal-(0.30*subtotal));
+        print total;
     }
-
+    
+    private int setValue()
+    {
+        Birthyear=yearOfBirth;
+        Birthyear.setValue;
+    }
+    
+    private int getValue()
+    {
+        Birthyear.getValue();
+    }
+    
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
         // to be completed
+        print (fullname+" had received a wire transfer of "+total+" CAD.")
+        unpaidHours=0;
     }
 }
