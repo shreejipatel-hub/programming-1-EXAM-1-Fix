@@ -34,13 +34,16 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
+        int yearstoWait=16-age;
         if(age>=16)
         {
             System.out.println("You can drive.");
+            return true;
         }
         else
         {
-            System.out.println("you have to wait "+(16-age)+" year.");
+            System.out.println("you have to wait "+yearstoWait+" year.");
+            return false;
         }
     }
 
@@ -52,15 +55,16 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
+
         double subtotal=(hourlyWage*unpaidHours);
         double total=(subtotal-(0.30*subtotal));
-         System.out.println(total);
+        return (total);
     }
     
     /*
      * question11
      */
-    private int setValue(int yearOfBirth)
+    public void setValue(int yearOfBirth)
     {
         this.yearOfBirth = yearOfBirth;
     }
@@ -68,7 +72,7 @@ public class Employee{
         /*
      * question11
      */
-    private int getValue()
+    public int getValue()
     {
         return this.yearOfBirth;
     }
@@ -81,6 +85,7 @@ public class Employee{
      */
     public void paySalary(){
         // to be completed
+        double total=calculatePay();
         System.out.println
             (fullname+" had received a wire transfer of "+ total +" CAD.");
         unpaidHours=0;
