@@ -60,10 +60,9 @@ public class Employee{
     /*
      * question11
      */
-    private int setValue()
+    private int setValue(int yearOfBirth)
     {
-        Birthyear=yearOfBirth;
-        Birthyear.setValue;
+        yearOfBirth = yearOfBirth;
     }
     
         /*
@@ -71,7 +70,7 @@ public class Employee{
      */
     private int getValue()
     {
-        Birthyear.getValue();
+        return yearOfBirth;
     }
     
     /*
